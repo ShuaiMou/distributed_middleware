@@ -1,0 +1,159 @@
+/*0.对网页做一些统一的设置*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/*1.给网页分区，设置每个区域的尺寸*/
+div {
+	border: 1px solid red;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 960px;
+	height: 61px;
+}
+
+.menu {
+	height: 91px;
+}
+
+.core {
+	height: 410px;
+	/*内边距的空间用来放渐变条*/
+	padding-top: 10px;
+}
+
+.copyright {
+	width: 960px;
+	height: 50px;
+}
+
+.content {
+	width: 950px;
+	height: 390px;
+	border: 5px solid #8ac1db;
+}
+
+.content > div{
+	width: 910px;
+	height: 40px;
+}
+
+.content > .data {
+	height: 310px;
+}
+
+/*2.设置背景*/
+body {
+	background-color: #0ea8d8;
+}
+
+
+.menu {
+	background-color: #0488bb;
+}
+
+.content {
+	background-color: #e8f3f8;
+}
+
+/*3.设置文本样式*/
+body {
+	font-family: "微软雅黑","文泉驿正黑","黑体";
+	font-size: 14px;
+}
+
+.logo {
+	text-align: right;
+	line-height: 61px;
+}
+
+.logo a {
+	margin-right: 40px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo a:hover {
+	font-weight: bold;
+}
+
+.copyright p {
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+}
+
+.middle {
+    margin: auto;
+    width: 30%;
+    font-weight: bold;
+}
+/*4.设置表格的样式*/
+
+.data table {
+	border: 1px solid #ccc; 
+	/*边框合并必须写在table上*/
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.data td {
+	border: 1px solid #ccc; 
+	text-align: center;
+}
+/*单元格中的文字默认垂直居中*/
+.data thead tr {
+	background-color: #fbedce;
+	height: 40px;
+	font-weight: bold;
+}
+
+.data tbody tr {
+	background-color: #fff;
+	height: 32px;
+}
+/*注意在冒号前后不要空格，否则失效*/
+.data tbody tr:hover {
+	background-color: #f7f9fd;
+}
+
+
+.data input:hover {
+	/*将鼠标形状设置为手型*/
+	cursor: pointer;
+}
+
+/*5.logo图片和消息框的定位问题*/
+
+.logo img {
+	 float: left;	
+}
+
+
+/*6.设置菜单栏样式*/
+
+.menu ul {
+	border: 1px solid yellow;
+	width: 960px;
+	height: 91px;
+	margin: 0 auto;
+	list-style-type: none;
+}
+
+.menu li {
+	border: 1px solid yellow;
+	width: 68px;
+	height: 77px;
+	margin: 7px 14px;
+	float: left;
+}
+
+
+/*7.收尾：去掉调试过程的边框*/
+
+.menu ul,.menu li,div {
+	border: 0;
+}

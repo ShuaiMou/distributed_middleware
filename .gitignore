@@ -1,8 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/distributed_middleware.iml
-.idea/inspectionProfiles/
-.idea/modules.xml
-.idea/workspace.xml
-simple_tomcat/.idea/
-simple_tomcat/target/
-simple_tomcat/tomcat_saul.iml
+.idea/
+jmsActiveMQ/jmsActiveMQ.iml
+tomcatSimple/tomcatSimple.iml
+

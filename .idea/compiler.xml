@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="jmsActiveMQ" />
         <module name="tomcat_saul" />
+        <module name="tomcatSimple" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jmsActiveMQ" target="1.5" />
       <module name="tomcat_saul" target="1.5" />
+      <module name="tomcatSimple" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

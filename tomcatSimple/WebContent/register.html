@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Registeration page</title>
+		<link rel="stylesheet" href="styles/log_in.css"> -
+		<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="scripts/basevalue.js"></script>
+		<script type="text/javascript" src="scripts/cookie_util.js"></script>
+		<script type="text/javascript" src="scripts/login.js"></script>
+		<script type="text/javascript">
+			$(function(){//加载完body后调用该函数
+				$("#register").click(userRegister);
+				$("#back").click(function(){
+					window.location.href = path + "/log_in.html"
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<div class="info">
+			<div class="title">
+				<span>&nbsp;Registeration&nbsp;</span>
+			</div>
+			<div>
+				&nbsp;Email&nbsp;:&nbsp;<input type="text" id="email">
+				<span id="email_span"></span>
+			</div>
+			<div> 
+				&nbsp;Username&nbsp;:&nbsp;<input type="text" id="nickname">
+				<span id="nickname_span"></span>
+			</div>
+			<div> 
+				&nbsp;Password&nbsp;:&nbsp;<input type="text" id="password">
+				<span id="password_span"></span>
+			</div>
+			<div> 
+				&nbsp;confim password&nbsp;:&nbsp;<input type="text" id="check-password">
+				<span id="check-password_span"></span>
+			</div>
+		</div>
+		<div>
+			<div>
+				<input type="button" value="&nbsp;Register&nbsp;" id="register">
+				<input type="button" value="&nbsp;Return&nbsp;" id="back">
+			</div>
+		</div>
+	</body>
+</html>
